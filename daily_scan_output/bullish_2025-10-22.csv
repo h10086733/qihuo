@@ -1,0 +1,2 @@
+﻿variety,trade_date,main_contract,open,close,price_change_pct,volume,has_position,total_long,total_short,net_position,net_ratio,sentiment,consistent
+FG,2025-10-22,FG2605,1088.0,1094.0,0.5514705882352942,1383748.0,True,128142,114413,13729,0.05660159551441941,偏多 🔴,True
