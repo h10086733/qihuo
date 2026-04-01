@@ -1,0 +1,2 @@
+﻿annual_return,annual_volatility,max_drawdown,win_rate,sharpe,avg_trade_return,signal_days,merged_signals,avg_holding_days,total_return,variety,top_k,lookback,threshold
+0.3273162106905161,0.10171994336751562,-0.02899944356624562,0.5789473684210527,3.2178174687722536,0.004954163184020721,39,23,1.6521739130434783,0.11892084462758024,IF,3,1,0.0

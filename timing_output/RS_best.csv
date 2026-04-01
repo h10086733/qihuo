@@ -1,0 +1,2 @@
+﻿variety,N,s,annual_return,annual_volatility,max_drawdown,win_rate,sharpe,avg_trade_return,signal_days,merged_signals,avg_holding_days,total_return
+RS,20,0.0,0.008613777788801569,0.07065742254562747,-0.018091889322468968,0.25,0.12190902920693389,0.0005630984875121259,4,2,2.0,0.0011237952667668694
