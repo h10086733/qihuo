@@ -294,6 +294,21 @@ def main():
                     log.warning(f"{symbol} 更新失败: {e}")
         pf.close_db()
 
+        # 更新持仓数据
+        fp.init_db(fp.DEFAULT_DB_PATH)
+        for category, varieties in SCAN_VARIETIES.items():
+            for variety in varieties:
+                try:
+                    contracts = fp.get_contracts(trade_date, variety, refresh=True)
+                    if contracts:
+                        main_contract = fp.pick_main_contract(trade_date, contracts)
+                        if main_contract:
+                            fp.get_position(trade_date, main_contract, "LPRANK", refresh=True)
+                            fp.get_position(trade_date, main_contract, "SPRANK", refresh=True)
+                except Exception as e:
+                    log.warning(f"{variety} 持仓更新失败: {e}")
+        fp.close_db()
+
         log.info("数据更新完成！\n")
 
     # 执行扫描

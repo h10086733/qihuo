@@ -1,0 +1,2 @@
+﻿variety,trade_date,main_contract,open,close,price_change_pct,volume,has_position,total_long,total_short,net_position,net_ratio,sentiment,consistent
+AU,2026-04-01,AU2606,1022.92,1053.18,2.958198099558138,315640.0,True,117922,33589,84333,0.5566130511976028,偏多 🔴,True
