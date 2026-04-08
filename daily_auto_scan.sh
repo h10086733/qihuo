@@ -15,8 +15,8 @@ echo ""
 
 # 1. 更新价格数据
 echo "步骤1: 更新价格数据..."
-python daily_scanner.py --date $YESTERDAY --update --threshold 0.05
-python daily_scanner.py --date $TODAY --update --threshold 0.05
+python3 daily_scanner.py --date $YESTERDAY --update --threshold 0.05
+python3 daily_scanner.py --date $TODAY --update --threshold 0.05
 
 # 2. 确定展示哪天的结果（优先今天，否则昨天）
 if [ -f "daily_scan_output/scan_${TODAY}.csv" ]; then
